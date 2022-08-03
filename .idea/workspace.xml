@@ -9,20 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284f11c3-8b95-4060-878d-0c1e3ab8621d" name="Changes" comment="Inital Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/ahmedraid/wallpaperenginelinux/utils/MacWallpaperChanger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/ahmedraid/wallpaperenginelinux/utils/extensions/AppExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/ahmedraid/wallpaperenginelinux/utils/extensions/AppExtensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/ahmedraid/wallpaperenginelinux/utils/extensions/WallpaperFolderExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/ahmedraid/wallpaperenginelinux/utils/extensions/WallpaperFolderExtensions.kt" afterDir="false" />
-    </list>
+    <list default="true" id="284f11c3-8b95-4060-878d-0c1e3ab8621d" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +239,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659549168319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add support for mac">
+      <created>1659550664678</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659550664678</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1659550838949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659550838949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +269,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital Commit" />
+    <MESSAGE value="Add support for mac" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
