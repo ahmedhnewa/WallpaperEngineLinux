@@ -18,6 +18,8 @@
 
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# Note by WallperEngineLinux Author: I was planning on use wallset to set the video wallpapers as wallpaper, but it didn't work
 
 shopt -s extglob
 
