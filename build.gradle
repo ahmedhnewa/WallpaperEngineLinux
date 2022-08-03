@@ -1,0 +1,61 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'java'
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClass = "com.ahmedraid.wallpaperenginelinux.MainAppKt"
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation('org.apache.commons:commons-lang3:3.12.0')
+    // https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload
+    implementation 'commons-fileupload:commons-fileupload:1.4'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation(files("libs/jaco-mp3-player-0.9.3.jar"))
+//    implementation(files("libs/jl-1.0.1.jar"))
+    /*// https://mvnrepository.com/artifact/org.mobicents.media.resources/player
+    implementation 'org.mobicents.media.resources:player:6.0.23'*/
+    // https://mvnrepository.com/artifact/javax.activation/activation
+    implementation 'javax.activation:activation:1.1.1'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2
+    implementation 'org.apache.commons:commons-configuration2:2.7'
+
+//    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+//    implementation 'org.dstadler:commons-dost:1.1.0.0'
+    implementation 'net.java.dev.jna:jna-platform:5.11.0'
+    implementation 'net.java.dev.jna:jna:5.11.0'
+    implementation 'com.formdev:flatlaf:2.2'
+//    implementation 'org.apache.cassandra:cassandra-all:0.8.1'
+    implementation 'com.github.Dansoftowner:jSystemThemeDetector:3.8'
+    implementation 'org.jsoup:jsoup:1.14.3'
+//    implementation 'org.openjfx:javafx-media:18.0.1'
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+}
