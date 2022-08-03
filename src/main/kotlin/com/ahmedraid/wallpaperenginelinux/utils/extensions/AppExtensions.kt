@@ -176,6 +176,8 @@ fun isLinuxOS(os: String = identifyOS()) = os == "Linux"
 
 fun isWindows(os: String = identifyOS()) = os.contains("Windows")
 
+fun isMac(os: String = identifyOS()) = os.lowercase().startsWith("mac")
+
 fun identifyDesktopEnvironment(): String {
     if (!isLinuxOS()) throw NotLinuxLinuxDesktopEnvironment()
     var simpleDesktopEnvironmentName = ""

@@ -6,6 +6,7 @@ import com.ahmedraid.wallpaperenginelinux.utils.WindowsWallpaperChanger
 import com.ahmedraid.wallpaperenginelinux.models.wallpaperengine.WallpaperEngineProjectFile
 import com.ahmedraid.wallpaperenginelinux.models.wallpaperengine.WallpaperEngineScene
 import com.ahmedraid.wallpaperenginelinux.utils.Constants
+import com.ahmedraid.wallpaperenginelinux.utils.MacWallpaperChanger
 import java.io.File
 import java.io.FileReader
 import java.net.URI
@@ -255,6 +256,8 @@ fun changeOsWallpaper(image: String, os: String = identifyOS()) {
             "cinnamon" -> executeProcess("gsettings set org.cinnamon.desktop.background picture-uri  \"file://$image\"")
             else -> logError("Can't recognize DE: $desktopEnvironment")
         }
+    } else if (isMac()) {
+        MacWallpaperChanger.changeWallpaper(image.toFile())
     } else logError("Can't recognize installed OS: $os")
 }
 
