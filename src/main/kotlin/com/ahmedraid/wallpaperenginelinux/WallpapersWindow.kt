@@ -1,6 +1,5 @@
 package com.ahmedraid.wallpaperenginelinux
 
-import com.google.gson.Gson
 import com.ahmedraid.wallpaperenginelinux.models.wallpaperengine.WallpaperEngineProjectFile
 import com.ahmedraid.wallpaperenginelinux.utils.extensions.*
 import java.awt.Color
@@ -55,11 +54,7 @@ class WallpapersWindow(
         myProjectsPath.listFiles()?.let { directoryListing.addAll(it) }
         val selectedWallpaper = getSelectedWallpaper()
         val wallpapersToHide = mutableSetOf(
-            "2057911583", "1721491190", "1650888372", "1993093715", "1787262480", "2785910053",
-            "1128448373", "2022951336", "2067099479", "2473368005", "2787701631", "2785910053",
-            "2258176193", "2529297837", "2435284909", "2402579071", "2323388979", "2787849505",
-            "2405464129", "2291813758", "1674972620", "1610141291", "1384888940", "1127929882",
-            "1738714834", "2786608606"
+            "9557961063"
         )
         for ((index, wallpaperFile) in directoryListing.withIndex()) {
             val wallpaperPath = wallpaperFile.path
